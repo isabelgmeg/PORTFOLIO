@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom"
 
+import "./NavBar.scss"
+
 export default function NavBar(){
     return(
         <nav className="navBar">
@@ -8,13 +10,13 @@ export default function NavBar(){
                     <Link to ="/">Home</Link>
                 </li>
                 <li>
-                    <Link to ="/">About</Link>
+                    <Link to ="/about">About</Link>
                 </li>
                 <li>
-                    <Link to ="/">Other</Link>
+                    <Link to ="/other">Other</Link>
                 </li>
                 <li>
-                    <Link to ="/">Contact</Link>
+                    <Link to ="/contact">Contact</Link>
                 </li>
 
             </ul>
