@@ -1,0 +1,41 @@
+@import "../../styles/utilities.scss";
+
+.navBar{
+    width: 100%;
+    display: flex;
+    height: 9vh;
+    justify-content: space-around;
+    font-family: "Montserrat", sans-serif;
+    &__links {
+        width: 90%;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+        text-transform: uppercase;
+        a {
+            text-decoration: none;
+            color: $blue;
+            &:hover{
+                font-weight: 800;
+                color: $orange;
+            }
+        }
+    }
+}
+
+@media (min-width: 780px){
+    .navBar{
+        &__links {
+            width: 40%;
+            a {
+                &:hover{
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    
+}
