@@ -1,0 +1,78 @@
+@import "../../styles/utilities.scss";
+
+.splash{
+    width: 90%;
+    margin: auto;
+}
+
+.hello{
+    outline: 1px solid red;
+    height: 50%;
+
+        &__arrow {
+    display: block;
+    width: 20%;
+    height: 17%;
+    border: solid #e84e0f;
+    border-width: 4px 0 0 4px;
+    padding: 4px;
+    }
+        &__text{
+    font-family: "Yeseva One", cursive;
+    display: inline-flex;
+    position: relative;
+    width: 100%;
+    font-size: 21vw;
+    text-transform: uppercase;
+    color: $orange;
+            &__text{
+                width:80%;
+                }
+
+    &__sticker{
+        width: 30%;
+        display: flex;
+        align-items: flex-start;
+        transform: translate(-24%, 14%);
+        img {
+            width: 100%;
+            height: auto;
+    
+        }
+    }
+}
+&__world{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: -6vw;
+    &__text{
+        font-family: "Yeseva One", cursive;
+        display: inline-flex;
+        position: relative;
+        width: 90%;
+        font-size: 21vw;
+        text-transform: uppercase;
+        color: transparent;
+        -webkit-text-stroke: 2px $blue;
+    }
+    &___dot{
+        width: 5vw;
+        height: 5vw;
+        border-radius: 50%;
+        background-color: $blue;
+    }
+}
+
+&_about{
+    p{
+        text-align: justify;
+        text-justify: inter-word;
+        color: $light-gray;
+        text-transform: uppercase;
+        padding: 0;
+        margin:0;
+    }
+}
+}
