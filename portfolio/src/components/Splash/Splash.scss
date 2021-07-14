@@ -3,16 +3,14 @@
 .splash{
     width: 90%;
     margin: auto;
+    display: block;
 }
 
 .hello{
-    outline: 1px solid red;
-    height: 50%;
-
         &__arrow {
     display: block;
-    width: 20%;
-    height: 17%;
+    width: 18vw;
+    height: 18vw;
     border: solid #e84e0f;
     border-width: 4px 0 0 4px;
     padding: 4px;
@@ -67,6 +65,7 @@
 
 &_about{
     p{
+        font-family: 'Montserrat', sans-serif;        
         text-align: justify;
         text-justify: inter-word;
         color: $light-gray;
@@ -75,4 +74,129 @@
         margin:0;
     }
 }
+}
+
+.sticker{
+    width: 20%;
+    margin-top: 1rem;
+    
+    img{
+        animation: rotateSticker 3s linear infinite;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@keyframes rotateSticker {
+    0%{
+        transform: rotate(0deg)
+    }
+    100%{
+        transform: rotate(360deg)
+    }
+}
+.welcome{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    &__pic{
+        width: 67%;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    &__text p{
+        font-family: "Yeseva One", cursive;
+        -webkit-text-stroke: 1px #b3b3b3;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        text-transform: uppercase;
+        padding: 0;
+        margin: 0;
+        font-size: 19vw;
+        color: transparent;
+    }
+}
+
+
+.abilities{
+    width: 100%;
+    display: block;
+    margin: 1rem 0px 1rem 0px;
+
+    &__line{
+        border: none;
+        border-top: 3px dashed $blue;
+        margin: 0px 0.5rem 0px 0.5rem;
+    }
+
+    &__display {
+        font-family: "Yeseva One", cursive;
+        display: inline-flex;
+        position: relative;
+        font-size: 4vw;
+        text-transform: uppercase;
+        color: $orange;
+        margin: 0;
+    }
+
+    &__soft{
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+        color: $orange;
+        font-size: 4vw;
+    
+    }
+
+    span{
+        width: 100%;
+        display: inline-flex;
+        align-items: center;
+    }
+}
+
+@media (min-width: 780px){
+    .splash{
+        display: flex;
+        .hello{
+            width: 50%;
+            &__arrow {
+                height: 8vh;
+                width: 8vh;
+
+            }
+            &__text{
+                font-size: 11vw;
+            }
+            &__world{
+                margin-top: -4vw;
+                &___dot{
+                    width: 2vw;
+                    height: 2vw;
+                }
+            &__text{
+                font-size: 11vw;
+            }
+        }
+        }
+        .sticker{
+            width: 20%;
+        }
+        .welcome{
+            width: 50%;
+            &__text p {
+                font-size: 9vw;
+            }
+        }
+        .abilities{
+            &__display{
+                font-size: 2vw;
+            }
+            &__soft{
+                font-size: 1.5vw;
+            }
+        }
+    }
 }

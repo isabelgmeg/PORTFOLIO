@@ -1,6 +1,8 @@
 import "./Splash.scss";
 
+import StickerSun from "../../assets/sticker-sun.png";
 import StickerEye from "../../assets/sticker-eye.png";
+import PersonalPic from "../../assets/personalPic.png";
 
 export default function Splash() {
   return (
@@ -25,9 +27,30 @@ export default function Splash() {
             ullamco
           </p>
         </section>
+        <section className="abilities">
+          <span>
+            <p className="abilities__display">Designer</p>
+            <span className="abilities__line"></span>
+            <p className="abilities__soft">Developer</p>
+          </span>
+          <span>
+            <p className="abilities__display">Programming</p>
+            <span className="abilities__line"></span>
+            <p className="abilities__soft">Designing</p>
+          </span>
+        </section>
+        <section className="sticker">
+          <img src={StickerSun} alt="sun Sticker" />
+        </section>
       </div>
-
-      <div className="welcome"></div>
+      <div className="welcome">
+        <section className="welcome__pic">
+          <img src={PersonalPic} alt="personal Pic" />
+        </section>
+        <section className="welcome__text">
+          <p>welcome</p>
+        </section>
+      </div>
     </div>
   );
 }
