@@ -6,8 +6,9 @@
     height: 9vh;
     justify-content: space-around;
     font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
     &__links {
-        width: 90%;
+        width: 80%;
         list-style-type: none;
         display: flex;
         justify-content: space-between;
@@ -30,6 +31,8 @@
     .navBar{
         &__links {
             width: 40%;
+            font-size: 1.3rem;
+
             a {
                 &:hover{
                     font-weight: 700;
