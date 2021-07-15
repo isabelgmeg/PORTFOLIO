@@ -1,0 +1,123 @@
+
+@import "../../styles/utilities.scss";
+
+.sections{
+    width: 90%;
+    margin: auto;
+    display: block;
+    padding-top: 5vh;
+
+    .design{
+        width: 100%;
+        z-index: 2;
+        &__title{
+            font-family: "Yeseva One", cursive;
+            font-size: 16vw;
+            text-transform: uppercase;
+            color: $washed-black;
+            margin: 0;
+            letter-spacing: 6vw;
+        }
+        &__ability{
+            width: 100%;
+            display: inline-flex;
+            margin: 1rem 0px 1rem 0px;
+            justify-content: space-between;
+            align-items: center;
+
+            &__line{
+                border: none;
+                border-top: 3px dashed $washed-black;
+                margin: 0px 0.5rem 0px 0.5rem;
+                width: 100%;
+            }
+        
+            &__display {
+                font-family: "Yeseva One", cursive;
+                display: inline-flex;
+                position: relative;
+                font-size: 4vw;
+                text-transform: uppercase;
+                color: $burnt-orange;
+                margin: 0;
+            }
+        
+            &__soft{
+                font-family: 'Montserrat', sans-serif;
+                margin: 0;
+                color: $burnt-orange;
+                font-size: 4vw;
+            
+            }
+        }
+        &__text {
+            font-family: 'Montserrat', sans-serif;        
+            text-align: justify;
+            text-justify: inter-word;
+            color: $light-gray;
+            text-transform: uppercase;
+            padding: 0;
+            margin:0;
+        }
+    }
+
+    .pics{
+        width: 100%;
+        display: block;
+        margin-bottom: 3rem;
+
+        &__main{
+            width: 97%;
+            display: block;
+            border: 5px solid $burnt-orange;
+            margin-bottom: 0.5rem;
+            overflow: hidden;
+            img {
+                width: 102%;
+                height: 102%;
+            }
+        }
+        &__mini{
+            width: 100%;
+            display: inline-flex;
+            justify-content: space-between;
+            &__wrapper{
+                border: 5px solid $burnt-orange;
+                width: 41vw;
+                overflow: hidden;
+                img {
+                    width: 120%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 780px) {
+    .sections{
+        width: 75%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .design{
+            width: 45%;
+            &__title{
+                font-size: 5vw;
+                letter-spacing: 3vw;
+            }
+            &__ability{
+                    &__display{
+                        font-size: 2vw;
+                    }
+                    &__soft{
+                        font-size: 1.5vw;
+                    }
+            }
+        }
+        .pics{
+            width: 45%;
+        }
+    }
+
+}
