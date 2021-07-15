@@ -10,13 +10,13 @@ export default function Splash() {
       <div className="hello">
         <section className="hello__arrow"></section>
         <section className="hello__text">
-          <span className="hello__text__text">Hello</span>
+          <h1 className="hello__text__text">Hello</h1>
           <span className="hello__text__sticker">
             <img src={StickerEye} alt="sticker"></img>
           </span>
         </section>
         <section className="hello__world">
-          <span className="hello__world__text">World</span>
+          <h1 className="hello__world__text">World</h1>
           <span className="hello__world___dot"></span>
         </section>
         <section className="hello_about">
