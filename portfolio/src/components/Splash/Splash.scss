@@ -100,6 +100,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: baseline;
+    transform: translate(0, -56px);
     &__pic{
         width: 67%;
         img{
@@ -185,6 +186,7 @@
             width: 20%;
         }
         .welcome{
+            transform: translate(0, 0);
             width: 50%;
             &__text p {
                 font-size: 9vw;

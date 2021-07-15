@@ -21,10 +21,11 @@ export default function Splash() {
         </section>
         <section className="hello_about">
           <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-            volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-            ullamco
+            I have a long experience background in customer centric design
+            experiences and an obsession with technological innovation to add
+            value to everyday tasks. After 8 years managing design projects I
+            have decided to refocus my knowledge on a different field and merge
+            design with being a Full Stack Programmer.
           </p>
         </section>
         <section className="abilities">
