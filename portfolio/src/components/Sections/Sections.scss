@@ -69,7 +69,7 @@
         &__main{
             width: 97%;
             display: block;
-            border: 5px solid $burnt-orange;
+            border: 1vw solid $burnt-orange;
             margin-bottom: 0.5rem;
             overflow: hidden;
             img {
@@ -82,7 +82,7 @@
             display: inline-flex;
             justify-content: space-between;
             &__wrapper{
-                border: 5px solid $burnt-orange;
+                border: 1vw solid $burnt-orange;
                 width: 41vw;
                 overflow: hidden;
                 img {
