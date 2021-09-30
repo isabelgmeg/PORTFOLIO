@@ -7,7 +7,6 @@ const links = ["home", "about", "other"];
 const ButtonMailto = ({ mailto, label, className }) => {
   return (
     <Link
-      className="navBar__links"
       to="#"
       onClick={(e) => {
         window.location = mailto;
@@ -28,10 +27,12 @@ export default function NavBar() {
             <Link to={`/${e}`}>{e.toLocaleUpperCase()}</Link>
           </li>
         ))}
-        <ButtonMailto
-          mailto="mailto:isabelgmegino@gmail.com"
-          label="Contact"
-        ></ButtonMailto>
+        <li>
+          <ButtonMailto
+            mailto="mailto:isabelgmegino@gmail.com"
+            label="Contact"
+          ></ButtonMailto>
+        </li>
       </ul>
     </nav>
   );
