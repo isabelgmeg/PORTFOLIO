@@ -1,25 +1,19 @@
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 
-import "./NavBar.scss"
+import "./NavBar.scss";
 
-export default function NavBar(){
-    return(
-        <nav className="navBar">
-            <ul className="navBar__links">
-                <li>
-                    <Link to ="/">Home</Link>
-                </li>
-                <li>
-                    <Link to ="/about">About</Link>
-                </li>
-                <li>
-                    <Link to ="/other">Other</Link>
-                </li>
-                <li>
-                    <Link to ="/contact">Contact</Link>
-                </li>
+const links = ["Home", "About", "Other", "Contact"];
 
-            </ul>
-        </nav>
-    )
+export default function NavBar() {
+  return (
+    <nav className="navBar">
+      <ul className="navBar__links">
+        {links.map((e) => (
+          <li key={e}>
+            <Link to={`/${e}`}>{e.toLowerCase()}</Link>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  );
 }
