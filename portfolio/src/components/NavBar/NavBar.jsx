@@ -1,25 +1,39 @@
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 
-import "./NavBar.scss"
+import "./NavBar.scss";
 
-export default function NavBar(){
-    return(
-        <nav className="navBar">
-            <ul className="navBar__links">
-                <li>
-                    <Link to ="/">Home</Link>
-                </li>
-                <li>
-                    <Link to ="/about">About</Link>
-                </li>
-                <li>
-                    <Link to ="/other">Other</Link>
-                </li>
-                <li>
-                    <Link to ="/contact">Contact</Link>
-                </li>
+const links = ["home", "about", "other"];
 
-            </ul>
-        </nav>
-    )
+const ButtonMailto = ({ mailto, label, className }) => {
+  return (
+    <Link
+      to="#"
+      onClick={(e) => {
+        window.location = mailto;
+        e.preventDefault();
+      }}
+    >
+      {label}
+    </Link>
+  );
+};
+
+export default function NavBar() {
+  return (
+    <nav className="navBar">
+      <ul className="navBar__links">
+        {links.map((e) => (
+          <li key={e}>
+            <Link to={`/${e}`}>{e.toLocaleUpperCase()}</Link>
+          </li>
+        ))}
+        <li>
+          <ButtonMailto
+            mailto="mailto:isabelgmegino@gmail.com"
+            label="Contact"
+          ></ButtonMailto>
+        </li>
+      </ul>
+    </nav>
+  );
 }
