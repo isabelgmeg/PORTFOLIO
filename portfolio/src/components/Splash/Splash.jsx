@@ -10,7 +10,7 @@ export default function Splash() {
       <div className="hello">
         <section className="hello__arrow"></section>
         <section className="hello__text">
-          <h1 className="hello__text__text">Hello</h1>
+          <h1 className="hello__text__text">hello</h1>
           <span className="hello__text__sticker">
             <img src={StickerEye} alt="sticker"></img>
           </span>
@@ -21,11 +21,9 @@ export default function Splash() {
         </section>
         <section className="hello_about">
           <p>
-            I have a long experience background in customer centric design
-            experiences and an obsession with technological innovation to add
-            value to everyday tasks. After 8 years managing design projects I
-            have decided to refocus my knowledge on a different field and merge
-            design with being a Full Stack Programmer.
+            Hi!{"\n"}I <strong>Conceptualize</strong> and{" "}
+            <strong>DEVELOP</strong> intuitive, engaging, and brand-consistent
+            web <strong>experiences</strong>
           </p>
         </section>
         <section className="abilities">

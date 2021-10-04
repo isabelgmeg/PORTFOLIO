@@ -3,6 +3,7 @@ $orange: rgb(232, 78, 15);
 $blue: rgb(0, 70, 240);
 $white: rgb(242, 242, 242);
 $light-gray: rgb(179, 179, 179);
+$background: #e6e6e6;
 
 $off-white: rgb(230, 230, 230);
 $burnt-orange: rgb(186, 87, 40);
@@ -20,10 +21,8 @@ $pure-white: rgb(255, 255, 255);
 }
 
 @font-face {
-  font-family: "mystic";
-  src: url("../fonts/Mystic/Maghfirea.otf") format("otf"),
-    url("../fonts/Mystic/Maghfirea.ttf") format("ttf"),
-    url("../fonts/Mystic/Maghfirea-qZ8vl.woff") format("woff");
+  font-family: "actu";
+  src: url("../fonts/Actu/Actu-d9oB7.otf") format("otf");
   font-weight: normal;
   font-style: italic;
 }
