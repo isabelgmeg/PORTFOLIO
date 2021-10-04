@@ -21,7 +21,7 @@
     width: 100%;
     &__text {
       width: 80%;
-      font-family: "subjectivitysuper", cursive;
+      font-family: "mystic", cursive;
       font-size: 21vw;
       text-transform: uppercase;
       color: $burnt-orange;
@@ -46,21 +46,21 @@
     align-items: baseline;
     margin-top: -6vw;
     &__text {
+      color: $blue;
       margin: 0;
-      font-family: "Yeseva One", cursive;
+      font-family: "mystic", cursive;
       display: inline-flex;
       position: relative;
       width: 90%;
       font-size: 21vw;
       text-transform: uppercase;
       color: transparent;
-      -webkit-text-stroke: 0.1px $washed-black;
     }
     &___dot {
       width: 5vw;
       height: 5vw;
       border-radius: 50%;
-      background-color: $washed-black;
+      background-color: $blue;
     }
   }
 
