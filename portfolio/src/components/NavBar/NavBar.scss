@@ -9,7 +9,7 @@
   font-size: 0.9rem;
   a {
     text-decoration: none;
-    color: $washed-black;
+    color: $blue;
     list-style-type: none;
     display: flex;
     justify-content: space-between;
@@ -30,6 +30,12 @@
     margin: 0;
     align-items: center;
     text-transform: uppercase;
+    li {
+      padding-right: 20px;
+    }
+    li:last-child {
+      padding-right: 0px;
+    }
   }
 }
 

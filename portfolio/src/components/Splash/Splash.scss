@@ -11,7 +11,6 @@
     display: block;
     width: 18vw;
     height: 18vw;
-    border: solid $burnt-orange;
     border-width: 4px 0 0 4px;
     padding: 4px;
   }
@@ -21,10 +20,12 @@
     width: 100%;
     &__text {
       width: 80%;
-      font-family: "mystic", cursive;
-      font-size: 21vw;
+      font-family: "actu", cursive;
+      /*       text-shadow: -1px -1px 0 $blue, 1px -1px 0 $blue, -1px 1px 0 $blue,
+        1px 1px 0 $blue; */
+      font-size: 19vw;
       text-transform: uppercase;
-      color: $burnt-orange;
+      color: $blue;
       margin: 0;
     }
 
@@ -32,7 +33,7 @@
       width: 30%;
       display: flex;
       align-items: flex-start;
-      transform: translate(-24%, 14%);
+      transform: translate(-20%, 14%);
       img {
         width: 100%;
         height: auto;
@@ -48,13 +49,12 @@
     &__text {
       color: $blue;
       margin: 0;
-      font-family: "mystic", cursive;
+      font-family: "displayBold", normal;
       display: inline-flex;
       position: relative;
       width: 90%;
-      font-size: 21vw;
+      font-size: 19vw;
       text-transform: uppercase;
-      color: transparent;
     }
     &___dot {
       width: 5vw;
@@ -69,7 +69,7 @@
       font-family: "Montserrat", sans-serif;
       text-align: justify;
       text-justify: inter-word;
-      color: $light-gray;
+      color: $blue;
       text-transform: uppercase;
       padding: 0;
       margin: 0;
@@ -82,9 +82,11 @@
   margin-top: 1rem;
 
   img {
-    animation: rotateSticker 3s linear infinite;
     width: 100%;
     height: auto;
+  }
+  &:focus {
+    animation: rotateSticker 3s linear infinite;
   }
 }
 
@@ -110,14 +112,16 @@
     }
   }
   &__text p {
-    font-family: "Yeseva One", cursive;
+    font-family: "displayBold", normal;
     writing-mode: vertical-rl;
     text-orientation: mixed;
     text-transform: uppercase;
+    text-shadow: -1px -1px 0 $blue, 1px -1px 0 $blue, -1px 1px 0 $blue,
+      1px 1px 0 $blue;
     padding: 0;
     margin: 0;
-    font-size: 19vw;
-    color: $pure-white;
+    font-size: 16vw;
+    color: $background;
   }
 }
 
@@ -128,7 +132,7 @@
 
   &__line {
     border: none;
-    border-top: 3px dashed $washed-black;
+    border-top: 1px dashed $washed-black;
     margin: 0px 0.5rem 0px 0.5rem;
   }
 
@@ -137,15 +141,14 @@
     display: inline-flex;
     position: relative;
     font-size: 4vw;
-    text-transform: uppercase;
-    color: $burnt-orange;
+    color: $blue;
     margin: 0;
   }
 
   &__soft {
     font-family: "Montserrat", sans-serif;
     margin: 0;
-    color: $burnt-orange;
+    color: $blue;
     font-size: 4vw;
   }
 
@@ -158,6 +161,7 @@
 
 @media (min-width: 780px) {
   .splash {
+    width: 80%;
     display: flex;
     .hello {
       width: 50%;
@@ -169,6 +173,9 @@
         &__text {
           font-size: 11vw;
         }
+        &__sticker {
+          transform: translate(42%, 27%);
+        }
       }
       &__world {
         margin-top: -4vw;
@@ -177,9 +184,7 @@
           height: 2vw;
         }
         &__text {
-          -webkit-text-stroke: 1px $washed-black;
-
-          font-size: 11vw;
+          font-size: 10vw;
         }
       }
     }
@@ -187,13 +192,16 @@
       width: 20%;
     }
     .welcome {
-      transform: translate(0, 0);
+      transform: translate(35px, 0);
       width: 50%;
       &__text p {
-        font-size: 9vw;
+        font-size: 8vw;
       }
     }
     .abilities {
+      &__line {
+        border-top: 2px dashed $washed-black;
+      }
       &__display {
         font-size: 2vw;
       }
