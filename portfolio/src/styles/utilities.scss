@@ -1,14 +1,29 @@
+$dark-gray: rgb(31, 31, 31);
+$orange: rgb(232, 78, 15);
+$blue: rgb(0, 70, 240);
+$white: rgb(242, 242, 242);
+$light-gray: rgb(179, 179, 179);
 
-$dark-gray: rgb(31,31,31);
-$orange: rgb(232,78,15);
-$blue: rgb(0,70,240);
-$white:rgb(242,242,242);
-$light-gray:rgb(179,179,179);
-
-$off-white:rgb(230,230,230);
-$burnt-orange: rgb(186,87,40);
-$washed-black: rgb(31,31,31);
+$off-white: rgb(230, 230, 230);
+$burnt-orange: rgb(186, 87, 40);
+$washed-black: rgb(31, 31, 31);
 $pure-white: rgb(255, 255, 255);
 
+@font-face {
+  font-family: "displayBold";
+  src: url("../fonts/SubjetivitySuper/subjectivity-super-webfont.woff")
+      format("woff"),
+    url("../fonts/SubjetivitySuper/subjectivity-super-webfont.woff2")
+      format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
 
-
+@font-face {
+  font-family: "mystic";
+  src: url("../fonts/Mystic/Maghfirea.otf") format("otf"),
+    url("../fonts/Mystic/Maghfirea.ttf") format("ttf"),
+    url("../fonts/Mystic/Maghfirea-qZ8vl.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
