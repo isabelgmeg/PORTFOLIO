@@ -26,3 +26,12 @@ $pure-white: rgb(255, 255, 255);
   font-weight: normal;
   font-style: italic;
 }
+
+@font-face {
+  font-family: "maragsa";
+  src: url("../fonts/Maragsa/Maragsa-Display.woff") format("woff"),
+    url("../fonts/Maragsa/Maragsa-Display.woff2") format("woff2"),
+    url("../fonts/Maragsa/Maragsâ-Display.otf") format("otf");
+  font-weight: bold;
+  font-style: normal;
+}

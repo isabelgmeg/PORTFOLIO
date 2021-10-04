@@ -161,6 +161,7 @@
 
 @media (min-width: 780px) {
   .splash {
+    width: 80%;
     display: flex;
     .hello {
       width: 50%;
@@ -172,6 +173,9 @@
         &__text {
           font-size: 11vw;
         }
+        &__sticker {
+          transform: translate(42%, 27%);
+        }
       }
       &__world {
         margin-top: -4vw;
@@ -180,7 +184,7 @@
           height: 2vw;
         }
         &__text {
-          font-size: 11vw;
+          font-size: 10vw;
         }
       }
     }
@@ -188,15 +192,15 @@
       width: 20%;
     }
     .welcome {
-      transform: translate(0, 0);
+      transform: translate(35px, 0);
       width: 50%;
       &__text p {
-        font-size: 9vw;
+        font-size: 8vw;
       }
     }
     .abilities {
       &__line {
-        border-top: 3px dashed $washed-black;
+        border-top: 2px dashed $washed-black;
       }
       &__display {
         font-size: 2vw;

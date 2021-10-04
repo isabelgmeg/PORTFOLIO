@@ -33,6 +33,9 @@
     li {
       padding-right: 20px;
     }
+    li:last-child {
+      padding-right: 0px;
+    }
   }
 }
 
